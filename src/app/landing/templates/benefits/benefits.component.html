@@ -1,0 +1,65 @@
+<div class="p-grid">
+  <div class="p-lg-1"></div>
+  <div class="p-lg-10 content-boundaries">
+    <label class="label" for="carousel-container">{{content.header}}</label>
+
+    <div id="carousel-container">
+      <tux-carousel>
+
+        <tux-carousel-item>
+          <div class="card">
+            <div>
+              <div>
+                <div class="section-headline">
+                  <h3 [innerHTML]="content.benefit1Title |nl2br"></h3>
+                </div>
+                <div>
+                  <div class="content-body" [innerHTML]="content.benefit3Body"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </tux-carousel-item>
+        <tux-carousel-item>
+
+          <div class="card">
+            <div>
+              <div >
+                <div class="section-headline">
+                  <h3 [innerHTML]="content.benefit2Title |nl2br"></h3>
+                </div>
+                <div>
+                  <div class="content-body" [innerHTML]="content.benefit2Body"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </tux-carousel-item>
+
+        <tux-carousel-item>
+          <div class="card">
+            <div>
+              <div >
+                <div class="section-headline">
+                  <h3 [innerHTML]="content.benefit3Title |nl2br"></h3>
+                </div>
+                <div>
+                  <div class="content-body" [innerHTML]="content.benefit3Body"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </tux-carousel-item>
+
+
+      </tux-carousel>
+    </div>
+
+  </div>
+  <div class="p-lg-1"></div>
+</div>
+
+
+
+
+

@@ -1,0 +1,55 @@
+@import "../../../../style_variables.scss";
+
+
+
+:host {
+  display: block;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-color: $bg-color;
+}
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+  img {
+    width: 3.5rem;
+    @media only screen and (min-width: $tablet-breakpoint) {
+      width: 5.3rem;
+    }
+  }
+}
+
+
+.footer-links {
+  margin-top: 5rem;
+  @media only screen and (min-width: $tablet-breakpoint) {
+    margin-top: 0;
+  }
+}
+
+@import '../../../../style_variables';
+
+.footer-divider {
+  opacity: .6;
+  margin: 4rem 0 2rem 0;
+  color: #000000;
+  display: block;
+  @media only screen and (min-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+
+.footer-credits {
+  p {
+    opacity: .65;
+  }
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    padding-top: 8rem;
+  }
+}
+
+.body-bold {
+  font-family: $base-font-bold !important;
+}

@@ -1,0 +1,15 @@
+<div class="modal" [class.type-confirmation]="typeConfirmation" [ngClass]="animationStatus" #modalBackground
+  [@showHide]="status" (@showHide.start)="showHideEvent($event)" (@showHide.done)="showHideEvent($event)"
+  (click)="backgroundClick($event)">
+
+  <!-- Modal content -->
+  <div class="modal-content" [@showHideContent]="status">
+    <div class="modal-header">
+      <span class="close" (click)="closeModal()">&times;</span>
+    </div>
+    <div class="modal-body" #modalBody>
+      <ng-content></ng-content>
+    </div>
+  </div>
+
+</div>

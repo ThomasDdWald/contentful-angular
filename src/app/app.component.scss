@@ -1,0 +1,64 @@
+/*
+ *
+ * General styles
+ * Page scaffolding
+ *
+ */
+
+@import '../styles';
+
+.main-wrapper {
+  background: #fff;
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.main-wrapper-inner {
+  background: #fff;
+  display: block;
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.main-header {
+  background: #fff;
+  display: block;
+  height: 80px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: auto;
+  z-index: $z-index-header;
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    height: 100px;
+  }
+}
+
+.main-page {
+  background: #fff;
+  bottom: 0;
+  display: block;
+  height: auto;
+  left: 0;
+  overflow: auto;
+  padding: 80px 0 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  -webkit-overflow-scrolling: touch;
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding-top: 100px;
+  }
+}

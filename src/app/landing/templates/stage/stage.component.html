@@ -1,0 +1,18 @@
+<div class="stage-container content-boundaries">
+  <div>
+    <div class="landing-img">
+      <img [src]="content.picture.url" [alt]="content.picture.title" class="landing-hero-img">
+    </div>
+
+    <div class="p-lg p-lg-align-center landing-title">
+      <h1>{{ content.titleLine1 }}<br> <span class="highlight-text">{{content.titleLine2}}</span></h1>
+    </div>
+    <div  class="landing-text">
+      <div class="p-lg p-lg-align-center content-body" [innerHtml]="content.body"></div>
+      <div class="landing-button">
+        <tux-cta [content]="content.cta"></tux-cta>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,100 @@
+@import '../../../../style_variables.scss';
+
+
+
+.carousel-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  @media only screen and (min-width: $tablet-breakpoint) {
+    overflow: visible;
+  }
+}
+
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  @media only screen and (min-width: $tablet-breakpoint) {
+    display: inline-flex;
+  }
+}
+
+
+:host ::ng-deep {
+
+  tux-carousel-item, tux-carousel-item.is-default {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 5rem);
+    box-sizing: border-box;
+    transform: translateX(calc(200% + 3rem));
+    @media only screen and (min-width: $tablet-breakpoint) {
+      position: relative;
+      transform: initial;
+      width: 100%;
+    }
+  }
+
+  tux-carousel-item.is-active {
+    transform: translateX(1rem);
+    @media only screen and (min-width: $tablet-breakpoint) {
+      transform: initial;
+    }
+  }
+
+  tux-carousel-item.is-next {
+    transform: translateX(calc(100% + 2rem));
+    @media only screen and (min-width: $tablet-breakpoint) {
+      transform: initial;
+    }
+  }
+
+  tux-carousel-item.is-exiting {
+    transform: translateX(-100%);
+    @media only screen and (min-width: $tablet-breakpoint) {
+      transform: initial;
+    }
+  }
+
+  tux-carousel-item.is-active-last {
+    transform: translateX(4rem);
+    @media only screen and (min-width: $tablet-breakpoint) {
+      transform: initial;
+    }
+  }
+
+  tux-carousel-item.is-exiting-last {
+    transform: translateX(calc(-100% + 3rem));
+    @media only screen and (min-width: $tablet-breakpoint) {
+      transform: initial;
+    }
+  }
+}
+
+
+.dots-container {
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #D9D2C8;
+  margin: 0 3px 0 3px;
+}
+
+.dot.active {
+  background-color: $primary-color;
+}
+
+
+

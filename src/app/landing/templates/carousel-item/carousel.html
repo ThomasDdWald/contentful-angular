@@ -1,0 +1,12 @@
+<div class="carousel-wrapper">
+  <div class="carousel-inner" [@cardAnimator]="animationState"
+       (@cardAnimator.done)="resetAnimationState()" #carInner [style.touch-action]="'pan-y'">
+    <ng-content select="tux-carousel-item" ></ng-content>
+  </div>
+
+  <div class="dots-container" *ngIf="!carouselDisabled">
+    <div class="dot" *ngFor="let dot of dots; let i = index" [ngClass]="{'active': i == index}"></div>
+  </div>
+</div>
+
+

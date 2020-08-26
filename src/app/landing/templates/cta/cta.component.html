@@ -1,0 +1,11 @@
+<button *ngIf="!content.isExternal"
+  [routerLink]="routerLink"
+  [ngClass]="[content.style ? content.style : 'btn-primary']" >
+  {{ content.text }}
+</button>
+<a
+  [href]="content.url"
+  [attr.target]="content.opensNewPage ? '_blank' : null"
+  [ngClass]="[content.style ? content.style : 'btn-primary']">
+  {{ content.text }}
+</a>

@@ -1,0 +1,74 @@
+$base-font: Apercu;
+$base-font-bold: ApercuBold;
+$heading-font: FreightDispBlackRegular;
+$heading-font-bold: FreightDispBoldRegular;
+
+$primary-color: #006192;
+$secondary-color: #7EA4B4;
+$alert-color: #DD735F;
+$confirmation-color: #61C282;
+$bg-color: #F3F1EF;
+$bg-color-secondary: #F3F1EF;
+$body-black: #4D4D4D;
+$white: #fff;
+$border-color: #D6D1CB;
+
+$grid-col: 12;
+
+$header-height: 8rem;
+$header-height-desktop: 10rem;
+
+
+$z-index-header: 50;
+$z-index-modal: 55;
+$z-index-main-page: 0;
+
+$small-breakpoint: 320px;
+$medium-breakpoint: 704px;
+$large-breakpoint: 992px;
+$content-max-width: 1180px;
+
+$desktop-breakpoint: $large-breakpoint;
+$tablet-breakpoint: $medium-breakpoint;
+
+@mixin media-query-tiny-only {
+  @media (max-width: #{$small-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin media-query-small-only {
+  @media (min-width: #{$small-breakpoint+1}) and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin media-query-medium-only {
+  @media (min-width: #{$medium-breakpoint+1}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin media-query-large-only {
+  @media (min-width: #{$large-breakpoint + 1}) {
+    @content;
+  }
+}
+
+@mixin media-query-gte-small {
+  @media (min-width: #{$small-breakpoint+1}) {
+    @content;
+  }
+}
+
+@mixin media-query-gte-medium {
+  @media (min-width: #{$medium-breakpoint+1}) {
+    @content;
+  }
+}
+
+@mixin media-query-gte-large {
+  @media (min-width: #{$large-breakpoint + 1}) {
+    @content;
+  }
+}

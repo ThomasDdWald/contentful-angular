@@ -1,0 +1,89 @@
+@import '../../../../style_variables.scss';
+
+
+:host {
+  display: block;
+  margin-bottom: 6rem;
+  @media only screen and (min-width: $tablet-breakpoint) {
+    margin-top: 6rem;
+  }
+}
+
+.bg-landing {
+  height: 50vh;
+  background-color: $bg-color;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    height: 720px;
+    min-height: 720px;
+    background-image: url("../../../../assets/logo_as_bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.landing-img {
+  margin-top: -4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-img img {
+  width: 100%;
+  max-width: 60rem;
+  margin-top: 3rem;
+  @media only screen and (min-width: $tablet-breakpoint) {
+    margin-top: 0;
+  }
+}
+
+.landing-title {
+  text-align: center;
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    margin-bottom: 4rem;
+    order: -1;
+  }
+}
+
+.landing-text {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    align-self: flex-start;
+    margin-top: 4rem;
+  }
+}
+
+
+
+.landing-button {
+  text-align: center;
+  margin-top: 4rem;
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    margin-top: 8rem;
+    // text-align: left;
+  }
+}
+
+.highlight-text {
+  color: $primary-color;
+}
+
+ul {
+  list-style-position: outside;
+  margin-left: 2rem;
+}
+
