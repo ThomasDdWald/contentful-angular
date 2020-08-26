@@ -1,13 +1,18 @@
 @import "../../../../style_variables.scss";
 
 .bg-landing {
-  height: 50vh;
-  background-color: $bg-color;
+
   top: 0;
   left: 0;
   position: absolute;
   width: 100%;
   opacity: 0.3;
+  height: 720px;
+  min-height: 720px;
+  background-image: url("../../../../assets/office.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media only screen and (min-width: $tablet-breakpoint) {
     height: 720px;
