@@ -33,7 +33,7 @@ export enum IconType {
   INFO = 'Info'
 }
 
-// tslint:disable-next-line:no-empty-interface
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface BlockContentModel { }
 
 export interface PictureContentModel {
