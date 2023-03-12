@@ -26,7 +26,7 @@ enum Direction {
   selector: 'tux-header-stage',
   templateUrl: './header-stage.html',
   styleUrls: ['./header-stage.scss'],
-  animations: [
+  /* animations: [
     trigger('toggle', [
       state(
         'hidden',
@@ -38,7 +38,7 @@ enum Direction {
       ),
       transition('* => *', animate('200ms ease-in'))
     ])
-  ]
+  ]*/
 })
 
 

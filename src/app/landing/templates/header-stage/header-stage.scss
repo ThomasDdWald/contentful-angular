@@ -110,6 +110,7 @@ $header-background-color: #fff;
 
 .navbar-toggle {
   display: flex;
+  font-size: 2rem;
   @media only screen and (min-width: $desktop-breakpoint) {
     display: none;
   }

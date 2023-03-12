@@ -133,7 +133,6 @@
       }
     }
   },
-  "defaultProject": "contentful-angular",
   "cli": {
     "analytics": false
   }

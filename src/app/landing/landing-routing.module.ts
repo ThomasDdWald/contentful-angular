@@ -5,14 +5,8 @@ import {HomeComponent} from './home/home.component';
 import {BlockHeaderStageComponent} from './templates/header-stage/header-stage';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: BlockHeaderStageComponent,
-    outlet: 'header'
-  },
-  {
-    path: '', component: HomeComponent
-  }
+  { path: '', component: BlockHeaderStageComponent, outlet: 'header' },
+  { path: '', component: HomeComponent }
   ];
 
 @NgModule({
