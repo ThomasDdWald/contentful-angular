@@ -13,6 +13,8 @@ import {BlockSignupComponent} from './templates/signup/signup.component';
 import {BlockBenefitsComponent} from './templates/benefits/benefits.component';
 import {CarouselModule} from './templates/carousel-item/carousel.module';
 import {Nl2BrPipe} from '../lib/pipes/nl2br.pipe';
+import {BlockHeaderStageComponent} from './templates/header-stage/header-stage';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 
@@ -23,6 +25,7 @@ import {Nl2BrPipe} from '../lib/pipes/nl2br.pipe';
     HomeComponent,
     FooterComponent,
     HeaderComponent,
+    BlockHeaderStageComponent,
     BlockStageComponent,
     PageRendererComponent,
     CtaComponent,
@@ -34,7 +37,8 @@ import {Nl2BrPipe} from '../lib/pipes/nl2br.pipe';
     CommonModule,
     LandingRoutingModule,
     TranslateModule,
-    CarouselModule
+    CarouselModule,
+
   ],
   entryComponents: [
     HeaderComponent

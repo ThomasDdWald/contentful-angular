@@ -1,5 +1,13 @@
 {
-	"year": "Jahr",
+  "About": "Über mich",
+  "Resume": "Resume",
+  "Services": "Dienstleistungen",
+  "Skills": "Skills",
+  "Projects": "Projekte",
+  "Contact": "Kontakte",
+
+
+  "year": "Jahr",
 	"years": "Jahre",
 	"Contract Details": "Vertragsbedingungen",
 	"Configuration": "Einstellungen",

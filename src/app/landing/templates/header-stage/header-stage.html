@@ -1,0 +1,31 @@
+<div class="header-wrapper" [ngClass]="{'solid-background': solidBackground}">
+  <div class="navbar" [ngClass]="{'box-shadow' : menuOpen}">
+
+    <div class="navbar-logo">
+      <figure>
+        <!--<img src="../../../../assets/Allvest_logo_mobile.svg" alt="" class="logo_mobile" routerLink="">
+        <img src="../../../../assets/Allvest_logo_desktop.svg" alt="" class="logo_desktop" routerLink="">-->
+      </figure>
+
+      <i class="navbar-toggle pi"
+               [ngClass]="{'pi-times': menuOpen, 'pi-bars': !menuOpen }"
+               (click)="menuOpen = !menuOpen">
+      </i>
+    </div>
+    <nav class="navbar-items" [ngClass]="{'navbar-toggle-show': menuOpen}">
+    <p class="header-link">{{'About' | translate}}</p>
+      <p class="header-link">{{'Resume' | translate }}</p>
+      <p class="header-link">{{'Services' | translate }}</p>
+      <p class="header-link">{{'Skills' | translate }}</p>
+      <p class="header-link">{{'Projects' | translate }}</p>
+      <p class="header-link">{{'Contact' | translate }}</p>
+    </nav>
+
+    <!--<nav class="navbar-items navbar-items-right" [ngClass]="{'navbar-toggle-show': menuOpen}">
+      <p class="header-link">{{'Login' | translate}}</p>
+      <alv-cta [content]="{text: 'Start Investing' | translate, url: '/signup/new'}"></alv-cta>
+    </nav>-->
+
+  </div>
+</div>
+

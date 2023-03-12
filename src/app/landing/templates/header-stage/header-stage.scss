@@ -1,0 +1,140 @@
+ @import '../../../../style_variables';
+
+$header-height: 8rem;
+$header-height-desktop: 10rem;
+$header-background-color: #fff;
+
+
+
+:host {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: $z-index-header;
+
+}
+
+.header-wrapper {
+  background-color: $header-background-color;
+}
+
+
+.navbar {
+  flex-direction: column;
+  min-height: 8rem;
+  padding: 0 2rem 0 2rem;
+  box-sizing: border-box;
+  @media only screen and (min-width: $desktop-breakpoint) {
+    align-items: center;
+    display: flex;
+    min-height: $header-height-desktop;
+    padding: 0 2rem 0 2rem;
+    max-width: $content-max-width;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+.navbar-logo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: $header-height;
+  img {
+    cursor: pointer;
+  }
+  @media only screen and (min-width: $desktop-breakpoint) {
+    display: initial;
+    width: initial;
+  }
+}
+
+.logo_desktop {
+  display: none;
+  margin-right: 6rem;
+  @media only screen and (min-width: $desktop-breakpoint) {
+    display: initial;
+  }
+}
+
+.logo_mobile {
+  height: min-content;
+  max-width: 3.5rem;
+  @media only screen and (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+
+}
+
+
+.navbar-items {
+  align-self: flex-start;
+  display: none;
+  flex-direction: column;
+
+  p {
+    margin: 1rem 0 1rem 0;
+  }
+
+  @media only screen and (min-width: $desktop-breakpoint) {
+    display: inline;
+    margin: auto 0 auto 0;
+    p {
+      margin: auto 2rem auto 2rem;
+      cursor: pointer;
+      display: inline;
+    }
+  }
+}
+
+
+.navbar-toggle {
+  cursor: pointer;
+  display: initial;
+  @media only screen and (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+
+.navbar-items-right {
+  margin-left: 0;
+  :first-child {
+    margin-bottom: 4rem;
+  }
+  @media only screen and (min-width: $desktop-breakpoint) {
+    margin-left: auto;
+  }
+}
+
+.navbar-toggle {
+  display: flex;
+  @media only screen and (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+
+.navbar-toggle-show {
+  display: flex;
+}
+
+alv-cta {
+  position: absolute;
+  right: 2rem;
+  top: 6rem;
+  @media only screen and (min-width: $desktop-breakpoint) {
+    position: initial;
+  }
+}
+
+
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.2);
+
+}
+
+.solid-background {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(100, 100, 100, 0.2);
+}

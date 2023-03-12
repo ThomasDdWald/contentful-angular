@@ -50,19 +50,20 @@ export class PageRendererComponent implements OnChanges {
 
   private renderBlock(model: BlockModel) {
     const block = this.createBlock(model);
-    if (block) {
-      // console.log('rendering', model);
-      const factory = this.componentFactoryResolver.resolveComponentFactory(block.component);
-      const componentRef = this.viewContainerRef.createComponent(factory);
-      // console.log('create', model.type, model);
-      (<ContentBlock>componentRef.instance).content = model.content;
+    if (!!block) {
+      if (!!block.component) {
+        const factory = this.componentFactoryResolver.resolveComponentFactory(block?.component);
+        const componentRef = this.viewContainerRef.createComponent(factory);
+        (<ContentBlock>componentRef.instance).content = model.content;
+      }
     }
   }
 
   private renderContent() {
-    // console.log('renderContent', this.content);
-    if (this.content) {
-      this.content.blocks.map(block => this.renderBlock(block));
+    if (!!this.content) {
+      if (this.content.blocks.length > 0) {
+        this.content.blocks.map(block => this.renderBlock(block));
+      }
     }
   }
 

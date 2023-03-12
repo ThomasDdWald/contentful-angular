@@ -39,14 +39,14 @@
   }
 
   tux-carousel-item.is-active {
-    transform: translateX(1rem);
+    transform: translateX(2.5rem);
     @media only screen and (min-width: $tablet-breakpoint) {
       transform: initial;
     }
   }
 
   tux-carousel-item.is-next {
-    transform: translateX(calc(100% + 2rem));
+    transform: translateX(calc(100% + 6rem));
     @media only screen and (min-width: $tablet-breakpoint) {
       transform: initial;
     }
@@ -60,14 +60,14 @@
   }
 
   tux-carousel-item.is-active-last {
-    transform: translateX(4rem);
+    transform: translateX(2.5rem);
     @media only screen and (min-width: $tablet-breakpoint) {
       transform: initial;
     }
   }
 
   tux-carousel-item.is-exiting-last {
-    transform: translateX(calc(-100% + 3rem));
+    transform: translateX(calc(-100%));
     @media only screen and (min-width: $tablet-breakpoint) {
       transform: initial;
     }
