@@ -1492,5 +1492,12 @@
     "name": "Zimbabwe",
     "nationality": "Zimbabwean",
     "code": "+263"
+  },
+
+  {
+    "alpha_2_code": "TZ",
+    "name": "Tanzania",
+    "nationality": "Tanzanian",
+    "code": "+255"
   }
 ]

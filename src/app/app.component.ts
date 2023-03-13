@@ -1,7 +1,5 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
-
-import {environment} from '../environments/environment';
 import {ScrollService} from './lib/core/services/scroll.service';
 
 @Component({
@@ -18,7 +16,7 @@ export class AppComponent {
     private translate: TranslateService,
     private scroll: ScrollService
   ) {
-    translate.getBrowserLang() !== 'de' ? translate.use('en') : translate.use('de');
+    translate.getBrowserLang() === undefined ? translate.use('en') : translate.use(translate.getBrowserLang());
     this.scroll.locked.subscribe(isLocked => this.onScrollLockChange(isLocked));
   }
 
