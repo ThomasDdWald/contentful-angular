@@ -12,13 +12,13 @@ $heading-font-bold: ApercuBold;
 
 :host ::ng-deep {
   .content-boundaries {
-    // max-width: $content-max-width;
+    max-width: $content-max-width;
     margin: auto;
   }
 
   h1 {
     font-family: $heading-font !important;
-    font-size: 4.8rem;
+    font-size: 3.8rem;
     line-height: 1.04;
 
     @media only screen and (min-width: $tablet-breakpoint) {
@@ -29,7 +29,7 @@ $heading-font-bold: ApercuBold;
 
   h2 {
     font-family: $heading-font;
-    font-size: 4.1rem;
+    font-size: 3.1rem;
     line-height: 1.04;
 
     @media screen and (min-width: $tablet-breakpoint) {

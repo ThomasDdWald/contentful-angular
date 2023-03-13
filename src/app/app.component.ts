@@ -18,8 +18,7 @@ export class AppComponent {
     private translate: TranslateService,
     private scroll: ScrollService
   ) {
-    translate.setDefaultLang('en');
-    translate.use(environment.language);
+    translate.getBrowserLang() !== 'de' ? translate.use('en') : translate.use('de');
     this.scroll.locked.subscribe(isLocked => this.onScrollLockChange(isLocked));
   }
 
@@ -42,13 +41,13 @@ export class AppComponent {
     } else {
       scrollingArea.style.overflow = 'auto';
 
-      /*requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
         const top = parseInt(scrollingArea.style.top, 10);
         console.log('top', top);
         scrollingArea.style.overflow = 'auto';
         scrollingArea.scrollTop = 0 - top;
         scrollingArea.style.top = 0;
-      });*/
+      });
     }
     this.scrollLocked = isLocked;
   }
