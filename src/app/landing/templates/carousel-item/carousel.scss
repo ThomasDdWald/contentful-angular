@@ -45,7 +45,7 @@
     }
   }
 
-  tux-carousel-item.is-next {
+  tuxCarouselItem.is-next {
     transform: translateX(calc(100% + 6rem));
     @media only screen and (min-width: $tablet-breakpoint) {
       transform: initial;

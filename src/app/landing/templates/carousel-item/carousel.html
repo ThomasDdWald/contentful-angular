@@ -5,7 +5,7 @@
   </div>
 
   <div class="dots-container" *ngIf="!carouselDisabled">
-    <div class="dot" *ngFor="let dot of dots; let i = index" [ngClass]="{'active': i == index}"></div>
+    <div class="dot" *ngFor="let dot of dots; let i = index" [ngClass]="{'active': i === index}"></div>
   </div>
 </div>
 

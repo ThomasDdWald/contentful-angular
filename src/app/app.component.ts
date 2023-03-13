@@ -5,7 +5,7 @@ import {environment} from '../environments/environment';
 import {ScrollService} from './lib/core/services/scroll.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'tux-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

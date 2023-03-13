@@ -13,7 +13,7 @@
         "@angular-eslint/component-selector": [
           "error",
           {
-            "prefix": "app-auftrag",
+            "prefix": "tux",
             "style": "kebab-case",
             "type": "element"
           }
@@ -21,9 +21,9 @@
         "@angular-eslint/directive-selector": [
           "error",
           {
-            "prefix": "app-auftrag",
-            "style": "camelCase",
-            "type": "attribute"
+            "prefix": "tux",
+            "style":  "kebab-case",
+            "type": ["attribute", "element"]
           }
         ]
       }
