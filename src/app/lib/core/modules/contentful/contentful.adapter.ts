@@ -43,7 +43,6 @@ export class ContentfulAdapter {
 
   // TODO: use a mapping object rather than a switch statement
   private static parseBlocks(blocks: any): Array<BlockModel> {
-    console.log('parseBlocks', blocks);
     const blocksContent = [];
     blocks.map(block => {
       if (block.fields) {
@@ -56,7 +55,6 @@ export class ContentfulAdapter {
       }
     });
 
-    console.log('return', blocksContent);
     return blocksContent;
 
   }
@@ -168,8 +166,6 @@ export class ContentfulAdapter {
 
   private static parseBenefits(fields: any): BenefitsContentModel {
     const parseBenefits = fields.content.fields;
-    console.log('parseBenefits', parseBenefits.benefit1body);
-
     return  {
         header: parseBenefits.header,
         benefit1Title: parseBenefits.benefit1title,
@@ -197,8 +193,6 @@ export class ContentfulAdapter {
   }
 
   private static parseBody(body, addParagraphTag = true): string {
-    console.log('parseBody', body);
-
     let bodyContent = '';
     body.content.map(content => {
       // console.log('contentType', content);
@@ -293,7 +287,6 @@ export class ContentfulAdapter {
       };
   }
   private static ctaParse(fields): CtaContentModel {
-     console.log('fields', fields);
     return {
       text: fields.text,
       url: fields.url,

@@ -34,7 +34,6 @@ export class ContentfulService {
   getPage(pageId: string): Promise<PageModel> {
     return this.cdaClient.getEntry(pageId, { include: 10 } )
       .then((res: any) => {
-        console.log('resr', res);
         return ContentfulAdapter.parsePage(res);
       });
   }

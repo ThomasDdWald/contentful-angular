@@ -112,7 +112,6 @@ export class ModalComponent implements OnDestroy, OnChanges {
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(({ urlAfterRedirects }: NavigationEnd) => {
         const urlSplit = urlAfterRedirects.split('/');
-        console.log('urlSplit', urlSplit);
         let parentUrl = '';
 
         let routingHasModalOutlet = false;
@@ -125,14 +124,12 @@ export class ModalComponent implements OnDestroy, OnChanges {
             routingHasModalOutlet = true;
           } else {
             parentUrl += '/' + element;
-            console.log('element', element);
           }
         }
 
         // Storing the parent URL
         // TODO: fix this in a better way
         this.previousUrl = parentUrl;
-        console.log('parentUrl', this.previousUrl);
 
         // If the modal is open, it is routing based but the
         // routing URL doesn't have the modal outlet, then the windows must
